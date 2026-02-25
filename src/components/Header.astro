@@ -102,12 +102,20 @@
   const heroSection = document.getElementById('hero-section');
 
   window.addEventListener('scroll', () => {
-    // Check if scrolled past hero section
-    const heroBottom = (heroSection?.offsetTop || 0) + (heroSection?.offsetHeight || 0);
+    // Only shrink nav on mobile devices
+    const isMobile = window.innerWidth < 768;
     
-    if (window.scrollY > heroBottom) {
-      navHeader?.classList.add('minimal');
+    if (isMobile) {
+      // Check if scrolled past hero section
+      const heroBottom = (heroSection?.offsetTop || 0) + (heroSection?.offsetHeight || 0);
+      
+      if (window.scrollY > heroBottom) {
+        navHeader?.classList.add('minimal');
+      } else {
+        navHeader?.classList.remove('minimal');
+      }
     } else {
+      // On desktop, always remove minimal class
       navHeader?.classList.remove('minimal');
     }
   });
