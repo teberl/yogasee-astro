@@ -1,0 +1,111 @@
+---
+import ImageComponent from './ImageComponent.astro';
+---
+
+<section id="about-me" class="py-20 px-6 bg-gradient-to-b from-white via-yogasee-light to-white">
+  <div class="max-w-5xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-yogasee-primary">Über mich</h2>
+      <div class="h-1 w-24 mx-auto rounded bg-yogasee-accent"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Text Content -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-6 text-yogasee-primary">
+          Hallo, ich bin Lisa Kristl
+        </h3>
+        
+        <p class="text-lg text-yogasee-secondary leading-relaxed mb-6">
+          Willkommen im Yogasee – einem Raum, den ich für Dich schaffe, damit Du entspannen, entschleunigen und Energie tanken kannst.
+        </p>
+        
+        <div class="bg-white rounded mb-8 p-6 border-l-4 border-yogasee-accent">
+          <p class="text-yogasee-secondary leading-relaxed mb-3">
+            Ich bin <span class="font-semibold">zertifizierte Yogalehrerin</span>, spezialisiert auf:
+          </p>
+          <ul class="space-y-2 text-yogasee-secondary">
+            <li class="flex items-start gap-3">
+              <span class="text-amber-500 font-bold mt-1">•</span>
+              <span><span class="font-semibold">Pränatal Yoga</span> – Yoga in der Schwangerschaft</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-500 font-bold mt-1">•</span>
+              <span><span class="font-semibold">Postnatal Yoga</span> – Rückbildung und Yoga mit Baby</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-500 font-bold mt-1">•</span>
+              <span><span class="font-semibold">Kinder Yoga</span> – Yoga für Kinder</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-500 font-bold mt-1">•</span>
+              <span>Ich bin selbst <span class="font-semibold">Mama von 2 Kindern</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Teaching Philosophy -->
+        <div class="space-y-4">
+          <h4 class="text-xl font-semibold mb-4 text-yogasee-primary">Mein Ansatz</h4>
+          
+          <p class="text-yogasee-secondary leading-relaxed">
+            Im Yogasee findest du in jedem Kurs einen Ort, um deine persönlichen Möglichkeiten zu entdecken, um zu wachsen und dich herauszufordern.
+          </p>
+          
+          <p class="text-yogasee-secondary leading-relaxed">
+            Neben dem körperlichen Ausgleich durch das Üben von Asana-Abfolgen helfen dir Achtsamkeits- und Konzentrationsübungen, Pranayama (Atemtechniken) und Entspannungstechniken, dein Gedankenkarussell anzuhalten und dich zurück ins Gleichgewicht zu bringen.
+          </p>
+
+          <p class="text-yogasee-secondary leading-relaxed">
+            Wir üben fließende und kraftvolle Haltungen in Verbindung mit der Atmung. Dabei liegt ein besonderer Augenmerk auf der korrekten Ausführung unter Berücksichtigung deiner körperlichen Voraussetzungen. Meditation, Pranayama und Themen aus der Yoga-Philosophie runden jede Einheit ab.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center">
+        <div class="w-full max-w-md">
+          <img 
+            src="/lisa.avif"
+            alt="Lisa Kristl - Yoga Instruktor bei yogasee"
+            class="w-full h-auto rounded-lg shadow-xl object-cover"
+            loading="lazy"
+          />
+          <p class="text-center text-yogasee-secondary text-sm mt-4 italic">
+            Lisa Kristl – Gründerin und Lehrerin von yogasee
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- What to Expect Section -->
+    <div class="mt-16 pt-12 border-t border-yogasee-light">
+      <h3 class="text-2xl font-semibold mb-8 text-center text-yogasee-primary">
+        Was Dich bei mir erwartet
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <h4 class="font-semibold mb-3 text-yogasee-primary">Achtsamkeit</h4>
+          <p class="text-yogasee-secondary text-sm leading-relaxed">
+            Deine Yogapraxis ist achtsam, individuell und echt. Im Mittelpunkt stehen deine Bedürfnisse und Wünschen.
+          </p>
+        </div>
+        <div class="text-center">
+          <h4 class="font-semibold mb-3 text-yogasee-primary">Dein Tempo</h4>
+          <p class="text-yogasee-secondary text-sm leading-relaxed">
+            In deinem Tempo, in deiner Balance, in deinem Rhythmus. Egal ob du neu anfängst oder deine Praxis vertiefst.
+          </p>
+        </div>
+        <div class="text-center">
+          <h4 class="font-semibold mb-3 text-yogasee-primary">Ganzheitlichkeit</h4>
+          <p class="text-yogasee-secondary text-sm leading-relaxed">
+            Asana, Pranayama, Meditation und Yoga-Philosophie – eine ganzheitliche Praxis für Körper, Geist und Seele.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

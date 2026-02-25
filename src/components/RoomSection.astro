@@ -1,0 +1,150 @@
+---
+import ImageComponent from './ImageComponent.astro';
+---
+
+<section id="raum" class="py-20 px-6 bg-gradient-to-b from-yogasee-light via-white to-yogasee-light">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-yogasee-primary">Der Raum</h2>
+      <h3 class="text-2xl md:text-3xl font-light mb-4 text-yogasee-accent">Raum für Dich</h3>
+      <div class="h-1 w-24 mx-auto rounded bg-yogasee-accent"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Text Content -->
+      <div>
+        <p class="text-lg text-yogasee-secondary leading-relaxed mb-8">
+          Herzlich Willkommen in meinem Yogaraum in Bernried am Starnberger See.
+        </p>
+        
+        <p class="text-yogasee-secondary leading-relaxed mb-6">
+          Da ich mich selbst am liebsten in der Natur – wie in den Bergen und am See – aufhalte, so ist auch der Raum ganz natürlich gestaltet.
+        </p>
+        
+        <p class="text-yogasee-secondary leading-relaxed mb-8">
+          Mit viel Tageslicht und warmen Holzelementen bietet er eine wunderbare Atmosphäre, um eine erdende Wohlfühlzeit zu verbringen.
+        </p>
+
+        <!-- Room Details -->
+        <div class="space-y-4">
+          <h4 class="text-xl font-semibold mb-4 text-yogasee-primary">Raumdetails</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="text-yogasee-primary font-bold mt-1">◆</span>
+              <span class="text-yogasee-secondary"><span class="font-semibold">55 Quadratmeter</span> Platz für Yoga, Coachings und Workshops</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yogasee-primary font-bold mt-1">◆</span>
+              <span class="text-yogasee-secondary"><span class="font-semibold">Große Fenster</span> – tagsüber hell und lichtdurchflutet</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yogasee-primary font-bold mt-1">◆</span>
+              <span class="text-yogasee-secondary"><span class="font-semibold">Helles Bad</span> sowie kleine Garderobe für Jacken und Schuhe</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yogasee-primary font-bold mt-1">◆</span>
+              <span class="text-yogasee-secondary"><span class="font-semibold">Ausrüstung vorhanden:</span> Nachhaltige Yogamatten, Bolster, Gurte, Kork Blöcke</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-yogasee-primary font-bold mt-1">◆</span>
+              <span class="text-yogasee-secondary">Ideal für Yoga, Fotoshootings, Tanzangebote und kreative Zusammentreffen</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Rental Info -->
+        <div class="mt-8 pt-8 border-t-2 border-yogasee-accent">
+          <h4 class="text-lg font-semibold text-yogasee-primary mb-3">Raum zur Miete</h4>
+          <p class="text-yogasee-secondary mb-3">
+            Der Raum eignet sich auch zur temporären Buchung für deine Workshops, Seminare, Fotoshootings und kreativen Projekte.
+          </p>
+          <p class="text-sm text-yogasee-secondary">
+            Die Preise richten sich nach Dauer und Art der Buchung. Für weitere Fragen zur Vermietung freue ich mich auf deine Kontaktaufnahme.
+          </p>
+        </div>
+      </div>
+
+      <!-- Images -->
+      <div class="grid grid-cols-1 gap-6">
+        <!-- Image 1 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.unsplash.com/photo-1506235902519-cf922ff490d0?w=600&h=400&fit=crop"
+            alt="Yogaraum - Natürliche Holzelemente"
+            class="w-full h-80 object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Image 2 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&h=400&fit=crop"
+            alt="Yogaraum - Tageslicht und offene Atmosphäre"
+            class="w-full h-80 object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Image 3 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.unsplash.com/photo-1540575467063-178f50902f4b?w=600&h=400&fit=crop"
+            alt="Yogaraum - Entspannungsbereich mit Natur"
+            class="w-full h-80 object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Info Section -->
+    <div class="mt-16 pt-12 border-t-2 border-yogasee-light">
+      <div class="rounded-lg p-8 md:p-12 bg-gradient-to-r from-yogasee-light to-yogasee-muted">
+        <h3 class="text-2xl font-semibold mb-8 text-center text-yogasee-primary">
+          Ein Raum für Vieles
+        </h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="font-semibold text-yogasee-primary mb-3 flex items-center gap-2">
+              <span class="text-2xl font-bold text-yogasee-accent">◆</span>
+              Yoga & Meditation
+            </h4>
+            <p class="text-yogasee-secondary text-sm leading-relaxed">
+              Perfekt für deine eigene Yogapraxis oder zum Unterrichten. Der ruhige Raum bietet die ideale Umgebung für tiefe Entspannung und innere Einkehr.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-yogasee-primary mb-3 flex items-center gap-2">
+              <span class="text-2xl font-bold text-yogasee-accent">◆</span>
+              Fotoshootings
+            </h4>
+            <p class="text-yogasee-secondary text-sm leading-relaxed">
+              Die großen Fenster und natürliche Lichtverhältnisse schaffen perfekte Bedingungen für professionelle Fotoshootings und kreative Projekte.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-yogasee-primary mb-3 flex items-center gap-2">
+              <span class="text-2xl font-bold text-yogasee-accent">◆</span>
+              Workshops & Seminare
+            </h4>
+            <p class="text-yogasee-secondary text-sm leading-relaxed">
+              Mit 55 Quadratmetern ideal für Workshops, Seminare und Gruppenveranstaltungen. Buche den Raum nach Bedarf.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-yogasee-primary mb-3 flex items-center gap-2">
+              <span class="text-2xl font-bold text-yogasee-accent">◆</span>
+              Kreative Zusammentreffen
+            </h4>
+            <p class="text-yogasee-secondary text-sm leading-relaxed">
+              Tanz, kreative Workshops, Coachings – ein flexibler Raum für alle Arten von achtsamen und kreativen Aktivitäten.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
