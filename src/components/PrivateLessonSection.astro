@@ -1,0 +1,100 @@
+---
+import ImageComponent from './ImageComponent.astro';
+---
+
+<section id="private-lessons" class="py-20 px-6 bg-gradient-to-b from-white via-amber-50 to-white">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-green-900 mb-4">Yoga im Einzelunterricht</h2>
+      <div class="h-1 w-20 bg-green-600 mx-auto rounded mb-8"></div>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Persönliche, achtsame Yoga-Praxis zugeschnitten auf deine individuellen Bedürfnisse
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+      <div>
+        <h3 class="text-2xl font-semibold text-green-800 mb-6">Deine Bedürfnisse im Mittelpunkt</h3>
+        
+        <div class="space-y-5">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Beim Einzelunterricht stehst du mit deinen Bedürfnissen und Wünschen im Mittelpunkt.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Wir gestalten gemeinsam eine Yogapraxis, die zu dir passt – achtsam, individuell und echt.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Mit Übungen, die dir gut tun, leicht zugänglich sind und Freude machen.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Egal ob du Yoga ganz neu entdecken oder deine Praxis vertiefen möchtest –
+          </p>
+
+          <p class="text-xl text-green-800 italic font-medium">
+            in deinem Tempo, in deiner Balance, in deinem Rhythmus.
+          </p>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-green-200">
+          <h4 class="text-lg font-semibold text-green-800 mb-4">Was dich erwartet:</h4>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 font-bold text-lg mt-1">✓</span>
+              <span>Persönlich angepasste Yoga-Sequenzen</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 font-bold text-lg mt-1">✓</span>
+              <span>Flexible Zeiten und Orte</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 font-bold text-lg mt-1">✓</span>
+              <span>Atemtechniken und Meditation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 font-bold text-lg mt-1">✓</span>
+              <span>Unterstützung bei Verletzungen oder Einschränkungen</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <ImageComponent 
+          src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop"
+          alt="Yoga Einzelunterricht - Entspannende Yogapraxis"
+          class="rounded-lg shadow-lg"
+        />
+        <ImageComponent 
+          src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&h=400&fit=crop"
+          alt="Yoga Meditation und Achtsamkeit"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+
+    <div class="bg-green-50 rounded-xl p-8 md:p-12 border border-green-200">
+      <h3 class="text-2xl font-semibold text-green-800 mb-4">Wie es funktioniert</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-green-600 mb-3">1</div>
+          <h4 class="font-semibold text-green-900 mb-2">Erstkonsultation</h4>
+          <p class="text-gray-700">Wir besprechen deine Ziele, Erfahrung und mögliche Beschwerden</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-green-600 mb-3">2</div>
+          <h4 class="font-semibold text-green-900 mb-2">Individuelle Praxis</h4>
+          <p class="text-gray-700">Eine personalisierte Yoga-Routine wird speziell für dich entwickelt</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-green-600 mb-3">3</div>
+          <h4 class="font-semibold text-green-900 mb-2">Kontinuierliche Anpassung</h4>
+          <p class="text-gray-700">Die Praxis evolve mit deinen Fortschritten und Bedürfnissen</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
