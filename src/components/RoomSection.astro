@@ -3,6 +3,7 @@ import ImageComponent from './ImageComponent.astro';
 ---
 
 <section id="raum" class="py-20 px-6 bg-gradient-to-b from-yogasee-light via-white to-yogasee-light">
+    <div class="max-w-5xl mx-auto">
     <!-- Section Header -->
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-bold mb-4 text-yogasee-primary">Der Raum</h2>
@@ -59,9 +60,14 @@ import ImageComponent from './ImageComponent.astro';
           <p class="text-yogasee-secondary mb-3">
             Der Raum eignet sich auch zur temporären Buchung für deine Workshops, Seminare, Fotoshootings und kreativen Projekte.
           </p>
-          <p class="text-sm text-yogasee-secondary">
+          <p class="text-sm text-yogasee-secondary mb-4">
             Die Preise richten sich nach Dauer und Art der Buchung. Für weitere Fragen zur Vermietung freue ich mich auf deine Kontaktaufnahme.
           </p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/yoga_see/" target="_blank" rel="noopener noreferrer" title="Instagram" class="transition text-yogasee-accent hover:text-yogasee-primary">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12c0-3.403 2.759-6.162 6.162-6.162 3.403 0 6.162 2.759 6.162 6.162 0 3.403-2.759 6.162-6.162 6.162-3.403 0-6.162-2.759-6.162-6.162zm2.889 0c0 1.821 1.453 3.309 3.272 3.309 1.82 0 3.315-1.489 3.315-3.309 0-1.82-1.494-3.309-3.315-3.309-1.819 0-3.272 1.489-3.272 3.309zm7.539-6.558c0 .795.645 1.44 1.44 1.44.795 0 1.44-.645 1.44-1.44 0-.794-.645-1.439-1.44-1.439-.795 0-1.44.645-1.44 1.439z"/></svg>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -70,7 +76,7 @@ import ImageComponent from './ImageComponent.astro';
         <!-- Image 1 -->
         <div class="rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="https://images.unsplash.com/photo-1506235902519-cf922ff490d0?w=600&h=400&fit=crop"
+            src="/yogasee-astro/room1_small.jpg"
             alt="Yogaraum - Natürliche Holzelemente"
             class="w-full h-80 object-cover"
             loading="lazy"
@@ -80,7 +86,7 @@ import ImageComponent from './ImageComponent.astro';
         <!-- Image 2 -->
         <div class="rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&h=400&fit=crop"
+            src="/yogasee-astro/room2.jpg"
             alt="Yogaraum - Tageslicht und offene Atmosphäre"
             class="w-full h-80 object-cover"
             loading="lazy"
@@ -90,7 +96,7 @@ import ImageComponent from './ImageComponent.astro';
         <!-- Image 3 -->
         <div class="rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="https://images.unsplash.com/photo-1540575467063-178f50902f4b?w=600&h=400&fit=crop"
+            src="/yogasee-astro/room3.jpg"
             alt="Yogaraum - Entspannungsbereich mit Natur"
             class="w-full h-80 object-cover"
             loading="lazy"
@@ -145,6 +151,6 @@ import ImageComponent from './ImageComponent.astro';
         </div>
       </div>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 

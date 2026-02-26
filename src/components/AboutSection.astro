@@ -11,12 +11,27 @@ import ImageComponent from './ImageComponent.astro';
     </div>
 
     <!-- Main Content -->
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="flex flex-col md:grid md:grid-cols-2 gap-12 md:items-center">
       <!-- Text Content -->
       <div>
         <h3 class="text-2xl font-semibold mb-6 text-yogasee-primary">
           Hallo, ich bin Lisa Kristl
         </h3>
+
+        <!-- Image on Mobile (after heading) -->
+        <div class="flex justify-center md:hidden mb-8">
+          <div class="w-full max-w-md">
+            <img 
+              src="/yogasee-astro/lisa.avif"
+              alt="Lisa Kristl - Yoga Instruktor bei yogasee"
+              class="w-full h-auto rounded-lg shadow-xl object-cover"
+              loading="lazy"
+            />
+            <p class="text-center text-yogasee-secondary text-sm mt-4 italic">
+              Lisa Kristl – Gründerin und Lehrerin von yogasee
+            </p>
+          </div>
+        </div>
         
         <p class="text-lg text-yogasee-secondary leading-relaxed mb-6">
           Willkommen im Yogasee – einem Raum, den ich für Dich schaffe, damit Du entspannen, entschleunigen und Energie tanken kannst.
@@ -64,8 +79,8 @@ import ImageComponent from './ImageComponent.astro';
         </div>
       </div>
 
-      <!-- Image -->
-      <div class="flex justify-center">
+      <!-- Image on Desktop -->
+      <div class="hidden md:flex justify-center md:col-span-1 md:order-2">
         <div class="w-full max-w-md">
           <img 
             src="/yogasee-astro/lisa.avif"

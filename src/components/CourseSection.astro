@@ -1,0 +1,190 @@
+---
+---
+
+<section id="kurse" class="py-20 px-6 bg-gradient-to-b from-yogasee-light via-white to-yogasee-light">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-yogasee-primary">Yoga Kurse</h2>
+      <div class="h-1 w-20 mx-auto rounded mb-8 bg-yogasee-accent"></div>
+      <p class="text-lg text-yogasee-secondary max-w-2xl mx-auto">
+        Spezialisierte Yoga-Kurse für verschiedene Lebensphasen und Bedürfnisse
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Pränatal Yoga -->
+      <div class="rounded-lg p-8 border-2 border-yogasee-accent bg-white shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4 text-yogasee-primary">Pränatal Yoga</h3>
+        <p class="text-yogasee-secondary mb-6">
+          Sanfte Yoga-Praxis speziell für Schwangere. Stärke, Flexibilität und Achtsamkeit für eine gesunde Schwangerschaft.
+        </p>
+        <button class="course-info-btn px-6 py-2 bg-yogasee-accent text-white font-semibold rounded-lg transition hover:opacity-90" data-course="prenatal">
+          Infos
+        </button>
+      </div>
+
+      <!-- Teensyoga 12-15 Jahre -->
+      <div class="rounded-lg p-8 border-2 border-yogasee-accent bg-white shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4 text-yogasee-primary">Teensyoga 12-15 Jahre</h3>
+        <p class="text-yogasee-secondary mb-6">
+          Yoga für Jugendliche. Stressabbau, Körperbewusstsein und innere Balance in einer altersgerechten Umgebung.
+        </p>
+        <button class="course-info-btn px-6 py-2 bg-yogasee-accent text-white font-semibold rounded-lg transition hover:opacity-90" data-course="teens">
+          Infos
+        </button>
+      </div>
+
+      <!-- Yoga zur Rückbildung mit Baby -->
+      <div class="rounded-lg p-8 border-2 border-yogasee-accent bg-white shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4 text-yogasee-primary">Yoga zur Rückbildung mit Baby</h3>
+        <p class="text-yogasee-secondary mb-6">
+          Sanfte Rückbildungsyoga mit Baby. Stärken Sie deinen Körper nach der Geburt während du Zeit mit deinem Baby verbringst.
+        </p>
+        <button class="course-info-btn px-6 py-2 bg-yogasee-accent text-white font-semibold rounded-lg transition hover:opacity-90" data-course="postpartum">
+          Infos
+        </button>
+      </div>
+
+      <!-- Mindful Hatha Flow -->
+      <div class="rounded-lg p-8 border-2 border-yogasee-accent bg-white shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4 text-yogasee-primary">Mindful Hatha Flow</h3>
+        <p class="text-yogasee-secondary mb-6">
+          Dynamische und achtsame Yoga-Praxis mit fließenden Bewegungen. Kraft, Flexibilität und mentale Klarheit in Harmonie.
+        </p>
+        <button class="course-info-btn px-6 py-2 bg-yogasee-accent text-white font-semibold rounded-lg transition hover:opacity-90" data-course="hatha">
+          Infos
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Info Modal -->
+<div id="course-modal" class="fixed inset-0 flex items-center justify-center z-50 opacity-0 invisible transition-opacity duration-300" style="background-color: rgba(180, 180, 180, 0.8);">
+  <div class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4 max-h-96 overflow-y-auto">
+    <div class="flex justify-between items-start mb-6">
+      <h3 id="modal-title" class="text-3xl font-bold text-yogasee-primary"></h3>
+      <button id="modal-close" class="text-gray-500 hover:text-gray-700 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div id="modal-content" class="text-yogasee-secondary space-y-4 mb-6"></div>
+    
+    <div class="flex justify-end gap-4">
+      <button id="modal-close-btn" class="px-6 py-2 text-yogasee-primary border-2 border-yogasee-primary rounded-lg hover:bg-yogasee-light transition">
+        Schließen
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('course-modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalContent = document.getElementById('modal-content');
+  const modalClose = document.getElementById('modal-close');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const courseInfoBtns = document.querySelectorAll('.course-info-btn');
+
+  const courseData = {
+    prenatal: {
+      title: 'Pränatal Yoga',
+      content: `
+        <p><strong>Zielgruppe:</strong> Schwangere in allen Trimestern</p>
+        <p><strong>Dauer:</strong> 60 Minuten</p>
+        <p><strong>Häufigkeit:</strong> Wöchentlich (Termine auf Anfrage)</p>
+        <p><strong>Beschreibung:</strong> Ein speziell für Schwangere entwickelter Kurs, der sanfte Yoga-Techniken, Atemübungen und Entspannung kombiniert.</p>
+        <p><strong>Vorteile:</strong></p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Körperliche Kraft und Flexibilität während der Schwangerschaft</li>
+          <li>Achtsamkeit und Stressabbau</li>
+          <li>Vorbereitung auf die Geburt</li>
+          <li>Verbindung mit deinem Baby</li>
+        </ul>
+      `
+    },
+    teens: {
+      title: 'Teensyoga 12-15 Jahre',
+      content: `
+        <p><strong>Zielgruppe:</strong> Jugendliche im Alter von 12-15 Jahren</p>
+        <p><strong>Dauer:</strong> 45-60 Minuten</p>
+        <p><strong>Häufigkeit:</strong> Wöchentlich (Termine auf Anfrage)</p>
+        <p><strong>Beschreibung:</strong> Ein altersgerechter Yoga-Kurs für Jugendliche, der Spaß, Achtsamkeit und Körperbewusstsein vereint.</p>
+        <p><strong>Vorteile:</strong></p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Stressabbau und bessere Konzentration</li>
+          <li>Körperliches Selbstbewusstsein stärken</li>
+          <li>Innere Balance und Ruhe finden</li>
+          <li>Soziale Verbindung mit Gleichaltrigen</li>
+        </ul>
+      `
+    },
+    postpartum: {
+      title: 'Yoga zur Rückbildung mit Baby',
+      content: `
+        <p><strong>Zielgruppe:</strong> Mütter nach der Geburt (6 Wochen postpartum)</p>
+        <p><strong>Dauer:</strong> 60 Minuten</p>
+        <p><strong>Häufigkeit:</strong> Wöchentlich (Termine auf Anfrage)</p>
+        <p><strong>Beschreibung:</strong> Sanfte Rückbildungspraxis speziell für die Zeit nach der Geburt, mit Baby an deiner Seite.</p>
+        <p><strong>Vorteile:</strong></p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Sanfte Stärkung der Rumpfmuskulatur</li>
+          <li>Förderung der Rückbildung</li>
+          <li>Bindung zum Baby vertiefen</li>
+          <li>Postpartale Erholung und Wohlbefinden</li>
+        </ul>
+      `
+    },
+    hatha: {
+      title: 'Mindful Hatha Flow',
+      content: `
+        <p><strong>Zielgruppe:</strong> Alle Fitnessstufen</p>
+        <p><strong>Dauer:</strong> 75 Minuten</p>
+        <p><strong>Häufigkeit:</strong> Wöchentlich (Termine auf Anfrage)</p>
+        <p><strong>Beschreibung:</strong> Ein dynamischer Yoga-Kurs, der klassische Hatha-Positionen mit fließenden Übergängen und Achtsamkeit verbindet.</p>
+        <p><strong>Vorteile:</strong></p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Körperliche Kraft und Ausdauer aufbauen</li>
+          <li>Flexibilität und Balance verbessern</li>
+          <li>Mentale Klarheit und Fokus</li>
+          <li>Ganzheitliches Wohlbefinden</li>
+        </ul>
+      `
+    }
+  };
+
+  function openModal(courseId) {
+    const data = courseData[courseId];
+    if (data) {
+      modalTitle.textContent = data.title;
+      modalContent.innerHTML = data.content;
+      modal.classList.remove('opacity-0', 'invisible');
+    }
+  }
+
+  function closeModal() {
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('invisible');
+    }, 300);
+  }
+
+  courseInfoBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const courseId = btn.getAttribute('data-course');
+      openModal(courseId);
+    });
+  });
+
+  modalClose.addEventListener('click', closeModal);
+  modalCloseBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+</script>
